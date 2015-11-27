@@ -13,14 +13,14 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MAIN_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'je*sbvz^jv^h4c5fj_71bm8@1$ve!hgi6c=&l$!t2jlc(+w$ff'
+SECRET_KEY = '_!1f)z^uj%*o4!*2hqfth46mzhpu$%^)-p-@#9m)l0np%@8cfh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',
+    'rxhero',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -68,16 +70,6 @@ TEMPLATES = [
     },
 ]
 
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
-
-# Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-# Allow all host headers
-ALLOWED_HOSTS = ['*']
-
-
 WSGI_APPLICATION = 'rxhero.wsgi.application'
 
 
@@ -91,13 +83,7 @@ DATABASES = {
     }
 }
 
-TEMPLATE_DIRS = (
-    os.path.join(MAIN_DIR, 'templates'),
-    )
 
-STATICFILES_DIRS = (
-    os.path.join(MAIN_DIR, 'static'),
-    )
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
