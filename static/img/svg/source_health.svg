@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="241" height="46" viewBox="0 0 2410 460">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 33.333px;
+      }
+
+      .cls-2 {
+        fill: #027edd;
+      }
+
+      .cls-2, .cls-4 {
+        font-family: "Montserrat-Bold";
+        font-weight: bold;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 18.75px;
+      }
+    </style>
+  </defs>
+  <text transform="translate(-1 268) scale(10)" class="cls-1"><tspan class="cls-2">SourceHealth</tspan></text>
+  <text transform="translate(2 448) scale(10)" class="cls-3"><tspan class="cls-4">Crowdsourced Rx Prices</tspan></text>
+</svg>
